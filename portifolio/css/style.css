@@ -1,0 +1,400 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #36383a;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navbar {
+    background-color: #36383a;
+    color: white;
+    height: 60px;
+
+    animation-name: navbar;
+    animation-duration: 4s;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover {
+    color: #EFB0A1;
+    transition: 0.3s;
+}
+
+.navbar ul {
+    margin-top: 0px;
+    list-style: none;
+    padding-left: 0px;
+    text-align: right;
+    height: 60px;
+    font-size: 16px;
+}
+
+.navbar li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.navbar li.threeline_menu {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar li.threeline_menu:hover {
+    color: #EFB0A1;
+}
+
+.capa {
+    color: white;
+    font-size: 16px;
+    line-height: 55px;
+}
+
+.capa span {
+    color: #EFB0A1;
+    display: block;
+}
+
+.capa div {
+    display: inline-block;
+    height: 650px;
+}
+
+.img_banner {
+    width: 40%;
+    text-align: center;
+    margin-top: 150px;
+
+    animation-name: profile_capa;
+    animation-duration: 3s;
+}
+
+.img_banner img {
+    border-radius: 300px;
+}
+
+.img_title {
+    vertical-align: top;
+    width: 59%;
+    margin-top: 150px;
+
+    animation-name: profile_title;
+    animation-duration: 3s;
+}
+
+.img_title h1 {
+    font-size: 58px;
+}
+
+.img_title h2 {
+    font-size: 16px;
+    line-height: 10px;
+    margin-top: -20px;
+}
+
+.main {
+    padding: 80px 180px 80px 85px;
+
+    animation-name: corpo;
+    animation-duration: 3s;
+}
+
+.main h1 {
+    color: white;
+    font-weight: normal;
+}
+
+.main h2 {
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.main h3 {
+    color: #EFB0A1;
+    font-size: 12px;
+}
+
+.main p {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.cv_pic {
+    float: right;
+    margin-top: 50px;
+    margin-right: 150px;
+    border-radius: 100px;
+}
+
+.caminho ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.caminho li {
+    display: inline-block;
+    color: rgb(165, 163, 163);
+}
+
+.caminho a {
+    color: rgb(165, 163, 163);
+}
+
+.social_icon {
+    width: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+.social_links {
+    display: inline-block;
+}
+
+.miniatura {
+    width: 280px;
+    height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.miniatura a {
+    text-decoration: none;
+}
+
+.blackbox {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    padding-top: 60px;
+    transition: 1s;
+}
+
+.blackbox_text {
+    text-align: center;
+}
+
+.blackbox:hover {
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.blackbox_text h1 {
+    font-size: 15px;
+    color: #EFB0A1;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.blackbox_text h2 {
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.foto_trabalhos {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.back_link {
+    color: #EFB0A1;
+}
+
+@keyframes profile_capa {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes profile_title {
+    0% {
+        opacity: 0;
+        transform: translate(0px, -20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes navbar {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes corpo {
+    0% {
+        opacity: 0;
+        transform: translate(-20px, 0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar li {
+        display: none;
+        margin-bottom: 30px;
+    }
+    
+    .navbar li.threeline_menu {
+        display: inline-block;
+        font-size: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .img_banner {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .img_banner img {
+        max-width: 90%;
+    }
+
+    .img_title {
+        width: 100%;
+        text-align: center;
+        margin-top: auto;
+        margin-bottom: 100px;
+    }
+
+    .img_title h1 {
+        font-size: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .img_title h2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .capa div {
+        display: block;
+        height: auto;
+    }
+
+    .main {
+        padding: 10px 5% 40px 5%;
+    }
+
+    .main a {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .main p {
+        text-align: left;
+        line-height: 50px;
+        font-size: 40px;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .main h1{
+        font-size: 50px;
+    }
+
+    .main h2{
+        font-size: 50px;
+    }
+
+    .main h3{
+        font-size: 50px;
+    }
+
+    .cv_pic {
+        float: none;
+        max-width: 100%;
+        margin: 0;
+
+    }
+
+    .miniatura {
+        width: 450px;
+        height: 350px;
+        background-size: auto 100%;
+    }
+
+    .blackbox {
+        width: 450px;
+        height: 350px;
+        opacity: 0, 8;
+    }
+
+    .menujs {
+        height: auto;
+    }
+
+    .menujs ul {
+        height: auto;
+        text-align: center;
+        padding-right: 15%;
+        padding-left: 15%;
+        font-size: 60px;
+        padding: 10px 20px 10px 20px;
+    }
+
+    .menujs li {
+        display: block;
+        border: solid grey 1px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .social_icon{
+        width: 150px;
+    }
+
+    .back_link{
+        font-size: 40px;
+        text-decoration: none;
+    }
+
+    .caminho{
+        font-size: 40px;
+    }
+}
