@@ -181,7 +181,7 @@ body {
 
 .blackbox {
     width: 100%;
-    height: 100%;
+    height: 85px;
     background-color: black;
     opacity: 0;
     padding-top: 60px;
@@ -335,15 +335,15 @@ body {
     }
 
     .main h1{
-        font-size: 50px;
+        font-size: 42px;
     }
 
     .main h2{
-        font-size: 50px;
+        font-size: 42px;
     }
 
     .main h3{
-        font-size: 50px;
+        font-size: 42px;
     }
 
     .cv_pic {
@@ -354,14 +354,14 @@ body {
     }
 
     .miniatura {
-        width: 450px;
+        width: 900px;
         height: 350px;
-        background-size: auto 100%;
+        background-size: auto;
     }
 
     .blackbox {
-        width: 450px;
-        height: 350px;
+        width: 500px;
+        height: 200px;
         opacity: 0, 8;
     }
 
